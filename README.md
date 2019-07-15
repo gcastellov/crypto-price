@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/gcastellov/crypto-price.svg?style=svg)](https://circleci.com/gh/gcastellov/crypto-price)
+
 # Crypto price
 
 ![Main](images/main.PNG)
