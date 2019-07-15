@@ -1,0 +1,28 @@
+<div class="management"> 
+    <h1>Crypto currency management</h1>
+
+    <div class="selector">
+        <b-form-select class="col-sm-1" v-model="currency" :options="availableCurrencies">
+            <template slot="first">
+                <option :value="null" disabled>-- Choose currency --</option>
+            </template>
+        </b-form-select>
+    </div>
+
+    <div class="selector">
+        <b-form-select class="col-sm-1" v-model="crypto" :options="availableCryptoCurrencies">
+            <template slot="first">
+                <option :value="null" disabled>-- Choose crypto --</option>
+            </template>
+        </b-form-select>
+    </div>
+
+    <div class="selector">
+        <b-button class="col-sm-1" @click="getPrice()">Get price</b-button>
+    </div>
+    
+    <div v-for="rate in rates">
+        <hr />
+        <PriceComponent :rate="rate"></PriceComponent>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div v-if="rate.price !== 0" class="price">    
+    <label>Currency: <b>{{rate.currency}}</b></label>
+    <label>Crypto: <b>{{rate.crypto}}</b></label>
+    <label>Price: <b>{{rate.price}}</b></label>
+    <label>At: <b>{{ rate.at | moment('DD-MM-YYYY hh:mm:ss') }}</b></label>
+    <b-button-close @click="kill()"></b-button-close>
+</div>
