@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/gcastellov/crypto-price.svg?branch=master)](https://travis-ci.org/gcastellov/crypto-price)
 [![CircleCI](https://circleci.com/gh/gcastellov/crypto-price.svg?style=svg)](https://circleci.com/gh/gcastellov/crypto-price)
 
 # Crypto price
