@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 2.2
+branches:
+  only:
+    - master
+script:
+ - dotnet build ./src/backend/CryptoPrice.sln
+ - dotnet test ./src/backend/CryptoPrice.UnitTests/CryptoPrice.UnitTests.csproj
